@@ -6,7 +6,6 @@
 
 using namespace std;
 
-
 void menu()
 {
 	SetConsoleTitle(TEXT("Vepe V423942 :^)"));
@@ -45,26 +44,32 @@ void clicker()
 	if (x > y)
 	{
 		cout << "Min CPS can't be greater than Max CPS." << endl;
+		Sleep(500);
+		exit(0);
 	}
 
 	else if (x < 0)
 	{
 		cout << "Min CPS can't be less than 0." << endl;
+		Sleep(500);
+		exit(0);
 	}
 
 	else if (y < 0)
 	{
 		cout << "Max CPS can't be less than 0." << endl;
+		Sleep(500);
+		exit(0);
 	}
 
 	cout << endl;
 	SetConsoleTextAttribute(hConsole, 11);
-	cout << "This will a random amount beetween " << x << " and "<< y << " to your CPS."<< endl;
+	cout << "This will a random amount beetween " << x << " and " << y << " to your CPS." << endl;
 	cout << "Note this only goes up to twice your CPS." << endl;
 	cout << "Therefore making Max CPS higher than your normal CPS won't do anything." << endl;
 	cout << endl;
 	SetConsoleTextAttribute(hConsole, 10);
-	cout << "Clicker started."<< endl;
+	cout << "Clicker started." << endl;
 
 	bool lclick = false;
 	bool rclick = false;
@@ -108,9 +113,7 @@ void clicker()
 		}
 
 		else
-		{
 			SetConsoleTitle(TEXT("Vepe V423942 :^) [OFF]"));
-		}
 
 		if (GetAsyncKeyState(VK_F6))
 		{
@@ -124,7 +127,6 @@ void clicker()
 
 			if (createRet == S_OK)
 			{
-
 				pTaskList->DeleteTab(GetConsoleWindow());
 
 				pTaskList->Release();
