@@ -1,2 +1,6 @@
-# clicker
-🖱 add artifical clicks to your real clicks
+# 𝗰𝗹𝗶𝗰𝗸𝗲𝗿
+
+🖱️ 𝗮𝗱𝗱 𝗮𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝗹 𝗰𝗹𝗶𝗰𝗸𝘀 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗿𝗲𝗮𝗹 𝗰𝗹𝗶𝗰𝗸𝘀
+
+## preview<br>
+![](https://cdn.discordapp.com/attachments/768549552361701416/775675937194770463/unknown.png)
