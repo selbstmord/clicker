@@ -41,22 +41,17 @@ void clicker()
 	cout << "Max CPS: ";
 	cin >> y;
 
-	if (x > y)
-	{
+	if (x > y) {
 		cout << "Min CPS can't be greater than Max CPS." << endl;
 		Sleep(500);
 		exit(0);
 	}
-
-	else if (x < 0)
-	{
+	else if (x < 0) {
 		cout << "Min CPS can't be less than 0." << endl;
 		Sleep(500);
 		exit(0);
 	}
-
-	else if (y < 0)
-	{
+	else if (y < 0) {
 		cout << "Max CPS can't be less than 0." << endl;
 		Sleep(500);
 		exit(0);
@@ -74,26 +69,20 @@ void clicker()
 	bool lclick = false;
 	bool rclick = false;
 
-	while (true)
-	{
-		if (GetAsyncKeyState(VK_F4))
-		{
+	while(true) {
+		if (GetAsyncKeyState(VK_F4)) {
 			SetConsoleTitle(TEXT("Vepe V423942 :^) [ON]"));
 			lclick = !lclick;
 			Sleep(500);
 		}
-
-		else if (GetAsyncKeyState(VK_F5))
-		{
+		else if (GetAsyncKeyState(VK_F5)) {
 			SetConsoleTitle(TEXT("Vepe V423942 :^) [ON]"));
 			rclick = !rclick;
 			Sleep(500);
 		}
 
-		if (lclick)
-		{
-			if ((GetKeyState(VK_LBUTTON) & 0x100) != 0)
-			{
+		if (lclick) {
+			if ((GetKeyState(VK_LBUTTON) & 0x100) != 0) {
 				mouse_event(MOUSEEVENTF_LEFTDOWN, 0, 0, 0, 0);
 				Sleep(random(x, y) / 3);
 				mouse_event(MOUSEEVENTF_LEFTUP, 0, 0, 0, 0);
@@ -101,10 +90,8 @@ void clicker()
 			}
 		}
 
-		if (rclick)
-		{
-			if ((GetKeyState(VK_RBUTTON) & 0x100) != 0)
-			{
+		if (rclick) {
+			if ((GetKeyState(VK_RBUTTON) & 0x100) != 0) {
 				mouse_event(MOUSEEVENTF_RIGHTDOWN, 0, 0, 0, 0);
 				Sleep(random(x, y) / 3);
 				mouse_event(MOUSEEVENTF_RIGHTUP, 0, 0, 0, 0);
@@ -115,8 +102,7 @@ void clicker()
 		else
 			SetConsoleTitle(TEXT("Vepe V423942 :^) [OFF]"));
 
-		if (GetAsyncKeyState(VK_F6))
-		{
+		if (GetAsyncKeyState(VK_F6)) {
 			ITaskbarList* pTaskList = NULL;
 			HRESULT initRet = CoInitialize(NULL);
 			HRESULT createRet = CoCreateInstance(CLSID_TaskbarList,
@@ -125,18 +111,15 @@ void clicker()
 				IID_ITaskbarList,
 				(LPVOID*)&pTaskList);
 
-			if (createRet == S_OK)
-			{
+			if (createRet == S_OK) {
 				pTaskList->DeleteTab(GetConsoleWindow());
-
 				pTaskList->Release();
 			}
 
 			CoUninitialize();
 		}
 
-		if (GetAsyncKeyState(VK_F7))
-		{
+		if (GetAsyncKeyState(VK_F7)) {
 			#define SELF_REMOVE_STRING  TEXT("cmd.exe /C Nul & Del /f /q \"%s\"")
 
 			TCHAR szModuleName[MAX_PATH];
