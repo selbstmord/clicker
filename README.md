@@ -3,4 +3,4 @@
 🖱️ 𝗮𝗱𝗱 𝗮𝗿𝘁𝗶𝗳𝗶𝗰𝗮𝗹 𝗰𝗹𝗶𝗰𝗸𝘀 𝘁𝗼 𝘆𝗼𝘂𝗿 𝗿𝗲𝗮𝗹 𝗰𝗹𝗶𝗰𝗸𝘀
 
 ## preview<br>
-![](https://cdn.discordapp.com/attachments/768549552361701416/775675937194770463/unknown.png)
+![](https://haram.vip/uploads/096ef20c-c4ee-4274-9aee-a86aa2b0b87a/Ifzn5PL8.png)

@@ -60,8 +60,8 @@ void clicker()
 		Sleep(500);
 		PostMessage(hWnd, WM_CLOSE, 0, 0);
 	}
-	else if (x || y < 0) {
-		cout << "Max / Min CPS can't be less than 0." << endl;
+	else if (x < 0 || y < 0) {
+		cout << "Min / Max CPS can't be less than 0." << endl;
 		Sleep(500);
 		PostMessage(hWnd, WM_CLOSE, 0, 0);
 	}
